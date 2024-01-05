@@ -1,8 +1,10 @@
 ---
+import { ViewTransitions } from "astro:transitions";
 import Base from "../layouts/Base.astro";
 import { SEO } from "astro-seo";
 import ApplyButton from "../components/ApplyButton.astro";
 import DonateButton from "../components/DonateButton.astro";
+import "aos/dist/aos.css"; // AOS styles
 ---
 
 <html lang="en">
@@ -19,11 +21,16 @@ import DonateButton from "../components/DonateButton.astro";
         },
       }}
     />
+    <ViewTransitions />
   </head>
   <body>
     <Base>
       <main class="flex-1">
-        <section class="relative w-full h-[600px] md:h-[800px] lg:h-[1000px]">
+        <section
+          data-aos="fade-up"
+          class="relative w-full h-[600px] md:h-[800px] lg:h-[1000px]"
+          data-aos-delay="100"
+        >
           <img
             src="/placeholder.svg"
             width="1200"
@@ -58,7 +65,12 @@ import DonateButton from "../components/DonateButton.astro";
             </div>
           </div>
         </section>
-        <section class="w-full py-12 md:py-24 lg:py-32 bg-gray-100">
+        <section
+          class="w-full py-12 md:py-24 lg:py-32 bg-gray-100"
+          data-aos="fade-down"
+          id="what"
+          data-aos-delay="200"
+        >
           <div class="container mx-auto px-4 md:px-6 justify-items-center">
             <div
               class="flex flex-col items-center justify-center space-y-4 text-center"
@@ -132,7 +144,12 @@ import DonateButton from "../components/DonateButton.astro";
             </div>
           </div>
         </section>
-        <section class="w-full py-12 md:py-24 lg:py-32">
+        <section
+          class="w-full py-12 md:py-24 lg:py-32"
+          data-aos-delay="200"
+          data-aos="zoom-in-down"
+          id="membership"
+        >
           <div
             class="container mx-auto px-4 md:px-6 flex flex-col items-center justify-center"
           >
@@ -154,7 +171,12 @@ import DonateButton from "../components/DonateButton.astro";
             </div>
           </div>
         </section>
-        <section class="w-full py-12 md:py-24 lg:py-32 bg-gray-100">
+        <section
+          class="w-full py-12 md:py-24 lg:py-32 bg-gray-100"
+          data-aos="zoom-in"
+          data-aos-delay="200"
+          id="initiatives"
+        >
           <div class="container mx-auto px-4 md:px-6">
             <div
               class="flex flex-col items-center justify-center space-y-4 text-center"
@@ -221,5 +243,25 @@ import DonateButton from "../components/DonateButton.astro";
         </nav>
       </footer>
     </Base>
+
+    <script>
+      import AOS from "aos";
+
+      export function aosInit() {
+        AOS.init({
+          duration: 800,
+          easing: "ease-out-cubic",
+          once: true,
+          offset: 50,
+        });
+      }
+
+      // runs on initial page load
+      aosInit();
+
+      // runs on view transitions navigation
+      document.addEventListener("astro:after-swap", aosInit);
+      // see here for details https://docs.astro.build/en/guides/view-transitions/#script-behavior-during-page-navigation
+    </script>
   </body>
 </html>
