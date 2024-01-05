@@ -1,6 +1,8 @@
 ---
 import Base from "../layouts/Base.astro";
 import { SEO } from "astro-seo";
+import ApplyButton from "../components/ApplyButton.astro";
+import DonateButton from "../components/DonateButton.astro";
 ---
 
 <html lang="en">
@@ -45,18 +47,8 @@ import { SEO } from "astro-seo";
               individuals.
             </p>
             <div class="mt-8 flex flex-col md:flex-row gap-4">
-              <a
-                class="inline-flex h-10 items-center justify-center rounded-md bg-red-600 px-8 text-sm font-medium text-white shadow transition-colors hover:bg-red-500 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-red-700"
-                href="#"
-              >
-                Apply Now
-              </a>
-              <a
-                class="inline-flex h-10 items-center justify-center rounded-md border border-white px-8 text-sm font-medium shadow transition-colors hover:bg-white hover:text-black focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-red-700"
-                href="#"
-              >
-                Donate Now
-              </a>
+              <ApplyButton />
+              <DonateButton />
               <a
                 class="inline-flex h-10 items-center justify-center rounded-md border border-white px-8 text-sm font-medium shadow transition-colors hover:bg-white hover:text-black focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-red-700"
                 href="#"
@@ -67,7 +59,7 @@ import { SEO } from "astro-seo";
           </div>
         </section>
         <section class="w-full py-12 md:py-24 lg:py-32 bg-gray-100">
-          <div class="container px-4 md:px-6 justify-items-center">
+          <div class="container mx-auto px-4 md:px-6 justify-items-center">
             <div
               class="flex flex-col items-center justify-center space-y-4 text-center"
             >
@@ -83,16 +75,14 @@ import { SEO } from "astro-seo";
                 <p
                   class="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
                 >
-                  Our club can be broken down into three main categories:{" "}
-                  <strong>Initiatives</strong>, <strong>Interships</strong>, and{
-                    " "
-                  }
-                  <strong>Events</strong>.
+                  Our club can be broken down into three main categories: <strong
+                    >Initiatives</strong
+                  >, <strong>Interships</strong>, and <strong>Events</strong>.
                 </p>
               </div>
             </div>
             <div
-              class="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-3 lg:gap-12"
+              class="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-3 lg:gap-12 justify-center"
             >
               <div
                 class="rounded-lg border bg-card text-card-foreground shadow-sm"
@@ -103,9 +93,9 @@ import { SEO } from "astro-seo";
                   <p class="text-gray-500">
                     Initiatives are long-term projects that are developed by our
                     members. They are a great way to gain experience in software
-                    development and to work with other students. The unlimate
-                    goal of each initiative is to provide value and make impact.
-                    2
+                    development and to work with other students. The ultimate
+                    goal of each initiative is to provide value and make an
+                    impact.
                   </p>
                 </div>
               </div>
@@ -119,7 +109,7 @@ import { SEO } from "astro-seo";
                     Explore our dynamic Events, from coding workshops to tech
                     talks and hackathons. Engage with industry leaders, learn
                     new skills, and connect with peers in an environment that
-                    sparks innovation and collaboration
+                    sparks innovation and collaboration.
                   </p>
                 </div>
               </div>
@@ -134,7 +124,7 @@ import { SEO } from "astro-seo";
                     real-world experience. From summer roles to part-time
                     positions, these opportunities are perfect for applying
                     classroom learning and kickstarting your career in
-                    technology. We do out best to expose our members to the
+                    technology. We do our best to expose our members to the
                     industry.
                   </p>
                 </div>
@@ -144,37 +134,28 @@ import { SEO } from "astro-seo";
         </section>
         <section class="w-full py-12 md:py-24 lg:py-32">
           <div
-            class="container grid items-center justify-center gap-6 px-4 md:px-6 lg:grid-cols-2 lg:gap-10"
+            class="container mx-auto px-4 md:px-6 flex flex-col items-center justify-center"
           >
-            <div class="space-y-2">
-              <h2 class="text-3xl font-bold tracking-tighter md:text-4xl/tight">
-                Membership Benefits
+            <div class="space-y-4 text-center max-w-md mx-auto">
+              <h2 class="text-3xl font-bold tracking-tighter md:text-4xl">
+                Membership
               </h2>
-              <p
-                class="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
-              >
+              <p class="text-gray-500 md:text-lg">
+                To become a member, you must be enrolled in an AP computer
+                science class or higher with a B or higher. You must also
+                complete the application process and be accepted by the club. If
+                you do not meet the requirements, you can apply for a waiver
+                that is listed in the apply page.
               </p>
             </div>
-            <div
-              class="flex flex-col gap-2 min-[400px]:flex-row lg:justify-end"
-            >
-              <a
-                class="inline-flex h-10 items-center justify-center rounded-md bg-red-600 px-8 text-sm font-medium text-white shadow transition-colors hover:bg-red-500 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-red-700"
-                href="#"
-              >
-                Apply Now
-              </a>
-              <a
-                class="inline-flex text-black h-10 items-center justify-center rounded-md border border-white px-8 text-sm font-medium shadow transition-colors hover:bg-white hover:text-black focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-red-700"
-                href="#"
-              >
-                Donate Now
-              </a>
+            <div class="flex flex-col md:flex-row gap-4 mt-6">
+              <ApplyButton />
+              <DonateButton />
             </div>
           </div>
         </section>
         <section class="w-full py-12 md:py-24 lg:py-32 bg-gray-100">
-          <div class="container px-4 md:px-6">
+          <div class="container mx-auto px-4 md:px-6">
             <div
               class="flex flex-col items-center justify-center space-y-4 text-center"
             >
@@ -188,7 +169,7 @@ import { SEO } from "astro-seo";
                   Our Initiatives
                 </h2>
                 <p
-                  class="max-w-[900px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
+                  class="max-w-[900px] mx-auto text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed"
                 >
                   Here are some of our initiatives that we are currently working
                   on.
@@ -196,7 +177,7 @@ import { SEO } from "astro-seo";
               </div>
             </div>
             <div
-              class="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-3 lg:gap-12"
+              class="mx-auto grid max-w-5xl items-center gap-6 py-12 lg:grid-cols-2 lg:gap-12"
             >
               <div
                 class="rounded-lg border bg-card text-card-foreground shadow-sm"
@@ -206,7 +187,7 @@ import { SEO } from "astro-seo";
                   <h3 class="text-xl font-bold">Open Courseware</h3>
                   <p class="text-gray-500">
                     The development of a free and open source courseware for
-                    Cherrry Creek High School. This initiative includes both the
+                    Cherry Creek High School. This initiative includes both the
                     writing of the curriculum and the development of the
                     website.
                   </p>
@@ -236,9 +217,7 @@ import { SEO } from "astro-seo";
           © Computer Science Honor Socitey. All rights reserved.
         </p>
         <nav class="sm:ml-auto flex gap-4 sm:gap-6">
-          <a class="text-xs hover:underline underline-offset-4" href="#">
-            Donate Now
-          </a>
+          <DonateButton />
         </nav>
       </footer>
     </Base>
