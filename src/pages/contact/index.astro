@@ -1,0 +1,44 @@
+---
+import Base from "@/layouts/Base.astro";
+import { SEO } from "astro-seo";
+import "@/styles/globals.css";
+---
+
+<html lang="en">
+  <head>
+    <SEO
+      title="Contact Us | Creek CSHS"
+      description="Get in touch with the Cherry Creek High School Computer Science Honor Society"
+    />
+  </head>
+  <body>
+    <Base>
+      <main class="flex-1">
+        <section class="bg-gray-100 py-24 text-center">
+          <div class="container mx-auto px-4 md:px-6">
+            <h1 class="text-5xl font-bold mb-4">Contact Us</h1>
+            <p class="text-xl text-gray-500 mb-8">
+              We're here to help and answer any question you might have. We look
+              forward to hearing from you.
+            </p>
+            <div class="bg-white shadow-md rounded-lg p-8 inline-block">
+              <h2 class="text-3xl font-bold mb-4">Email Us</h2>
+              <a
+                href="mailto:cherrycreekcshs@gmail.com"
+                class="text-red-600 font-semibold hover:text-red-800 text-lg"
+              >
+                cherrycreekcshs@gmail.com
+              </a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer
+        class="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t"
+      >
+        <!-- Footer content here -->
+      </footer>
+    </Base>
+  </body>
+</html>
