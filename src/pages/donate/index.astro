@@ -1,0 +1,109 @@
+---
+import Base from "@/layouts/Base.astro";
+import { SEO } from "astro-seo";
+import "@/styles/globals.css";
+import { Button } from "@/components/ui/button";
+---
+
+<html lang="en">
+  <head>
+    <SEO
+      title="Donate | Creek CSHS"
+      description="Support the Cherry Creek High School Computer Science Honor Society through donations"
+    />
+  </head>
+  <body>
+    <Base>
+      <main class="flex-1">
+        <section class="bg-gray-100 py-24 text-center">
+          <div class="container mx-auto px-4 md:px-6">
+            <h1 class="text-5xl font-bold mb-4">Support Our Mission</h1>
+            <p class="text-xl text-gray-500 mb-8">
+              Your contributions help us continue our efforts in fostering a
+              community of passionate computer science students.
+            </p>
+          </div>
+        </section>
+
+        <section class="py-24">
+          <div
+            class="container mx-auto px-4 md:px-6 grid grid-cols-1 md:grid-cols-2 gap-12"
+          >
+            <div>
+              <h2 class="text-3xl font-bold mb-4">Why Donate?</h2>
+              <p class="text-lg text-gray-500">
+                Donations are crucial in supporting our initiatives, events, and
+                educational resources. They enable us to provide the best
+                opportunities for our members.
+              </p>
+            </div>
+            <div>
+              <h2 class="text-3xl font-bold mb-4">How Your Donation Helps</h2>
+              <p class="text-lg text-gray-500">
+                Your support will go towards organizing events, developing
+                projects, and expanding our reach to more students interested in
+                computer science.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="bg-gray-100 py-24">
+          <div class="container mx-auto px-4 md:px-6 text-center">
+            <h2 class="text-3xl font-bold mb-4">Donation Methods</h2>
+            <p class="text-xl text-gray-500 mb-8">
+              Choose the most convenient way to make your donation.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <!-- PayPal Card -->
+              <div class="rounded-lg border bg-white p-6 text-center shadow-sm">
+                <h3 class="text-xl font-bold mb-2">PayPal</h3>
+                <p class="text-gray-500 mb-4">
+                  Secure and easy online payments
+                </p>
+                <a
+                  href="#"
+                  class="text-red-600 font-semibold hover:text-red-800"
+                  >Donate with PayPal</a
+                >
+              </div>
+              <!-- CashApp Card -->
+              <div class="rounded-lg border bg-white p-6 text-center shadow-sm">
+                <h3 class="text-xl font-bold mb-2">CashApp</h3>
+                <p class="text-gray-500 mb-4">Convenient mobile transactions</p>
+                <a
+                  href="#"
+                  class="text-red-600 font-semibold hover:text-red-800"
+                  >Donate with CashApp</a
+                >
+              </div>
+              <!-- GitHub Donations Card -->
+              <div class="rounded-lg border bg-white p-6 text-center shadow-sm">
+                <h3 class="text-xl font-bold mb-2">GitHub Donations</h3>
+                <p class="text-gray-500 mb-4">
+                  Support open-source contributors
+                </p>
+                <a
+                  href="#"
+                  class="text-red-600 font-semibold hover:text-red-800"
+                  >Donate on GitHub</a
+                >
+              </div>
+              <!-- Cash/Get in Touch Card -->
+              <div class="rounded-lg border bg-white p-6 text-center shadow-sm">
+                <h3 class="text-xl font-bold mb-2">Cash/Get in Touch</h3>
+                <p class="text-gray-500 mb-4">
+                  Direct donations &amp; inquiries
+                </p>
+                <a
+                  href="#"
+                  class="text-red-600 font-semibold hover:text-red-800"
+                  >Contact Us</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </Base>
+  </body>
+</html>
