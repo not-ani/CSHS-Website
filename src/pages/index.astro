@@ -2,9 +2,12 @@
 import { ViewTransitions } from "astro:transitions";
 import Base from "../layouts/Base.astro";
 import { SEO } from "astro-seo";
+import "@/styles/globals.css";
+import { Button } from "@/components/ui/button";
 import ApplyButton from "../components/ApplyButton.astro";
 import DonateButton from "../components/DonateButton.astro";
 import "aos/dist/aos.css"; // AOS styles
+import FAQAccordion from "@/components/ApplyFAQ";
 ---
 
 <html lang="en">
@@ -232,6 +235,21 @@ import "aos/dist/aos.css"; // AOS styles
           </div>
         </section>
       </main>
+
+      <section
+        class="w-full py-12 md:py-24 lg:py-32"
+        data-aos="fade-up"
+        data-aos-delay="300"
+      >
+        <div class="container mx-auto px-4 md:px-6 text-center">
+          <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold">
+            Frequently Asked Questions
+          </h2>
+          <div class="mt-8">
+            <FAQAccordion client:load />
+          </div>
+        </div>
+      </section>
       <footer
         class="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t"
       >
@@ -240,7 +258,6 @@ import "aos/dist/aos.css"; // AOS styles
         </p>
         <nav class="sm:ml-auto flex gap-4 sm:gap-6">
           <DonateButton />
-
           <a
             href="https://www.instagram.com/creekcshs"
             class="text-gray-500 hover:text-gray-700"
