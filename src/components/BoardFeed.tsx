@@ -16,7 +16,7 @@ export function BoardFeed() {
           <div key={year}>
             <AccordionItem value={year as unknown as string}>
               <AccordionTrigger>
-                <h2>{year}</h2>
+                <h2 className="text-xl">{year}</h2>
               </AccordionTrigger>
               <AccordionContent>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
