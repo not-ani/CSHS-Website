@@ -15,7 +15,7 @@ export type BoardMember = {
   year: Year;
 };
 
-export type Year = number; // or number, depending on how you store years
+export type Year = string; // or number, depending on how you store years
 type Position =
   | "President"
   | "Vice President"
