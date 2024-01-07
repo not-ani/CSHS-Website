@@ -45,7 +45,7 @@ export const boardMembers: BoardMember[] = [
     position: ["Head of Tutoring"],
     bio: "Alyssa is a junior at Cherry Creek High School. She  is passionate about computer science and is the head of tutoring for CSHS.",
     year: 2023,
-    photo: "/no-image.jpg",
+    photo: "/alyssa-headshot.jpeg",
   },
   // 2022
 
