@@ -1,6 +1,12 @@
+---
+import { ViewTransitions } from "astro:transitions";
+---
+
 <a
   class="inline-flex h-10 items-center justify-center rounded-md border border-gray-300 px-8 text-sm font-medium text-black shadow transition-colors hover:bg-white focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-red-700"
+  transition:name="donate"
   href="/donate"
 >
   Donate Now
 </a>
+<ViewTransitions />

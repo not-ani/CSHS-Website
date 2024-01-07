@@ -3,6 +3,7 @@ import Base from "@/layouts/Base.astro";
 import { SEO } from "astro-seo";
 import "@/styles/globals.css";
 import { Button } from "@/components/ui/button";
+import { ViewTransitions } from "astro:transitions";
 ---
 
 <html lang="en">
@@ -11,13 +12,17 @@ import { Button } from "@/components/ui/button";
       title="Donate | Creek CSHS"
       description="Support the Cherry Creek High School Computer Science Honor Society through donations"
     />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <ViewTransitions />
   </head>
   <body>
     <Base>
       <main class="flex-1">
         <section class="bg-gray-100 py-24 text-center">
           <div class="container mx-auto px-4 md:px-6">
-            <h1 class="text-5xl font-bold mb-4">Support Our Mission</h1>
+            <h1 class="text-5xl font-bold mb-4" transition:name="donate">
+              Support Our Mission and Donate!
+            </h1>
             <p class="text-xl text-gray-500 mb-8">
               Your contributions help us continue our efforts in fostering a
               community of passionate computer science students.

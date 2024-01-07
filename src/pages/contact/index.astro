@@ -2,6 +2,7 @@
 import Base from "@/layouts/Base.astro";
 import { SEO } from "astro-seo";
 import "@/styles/globals.css";
+import { ViewTransitions } from "astro:transitions";
 ---
 
 <html lang="en">
@@ -11,6 +12,7 @@ import "@/styles/globals.css";
       description="Get in touch with the Cherry Creek High School Computer Science Honor Society"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <ViewTransitions />
   </head>
   <body>
     <Base>
