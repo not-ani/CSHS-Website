@@ -5,13 +5,13 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 bg-white shadow-md">
-      <div className="antialiased bg-gray-100 dark:bg-gray-900">
-        <div className="w-full text-gray-700 bg-white dark:text-gray-200 dark:bg-gray-800">
+      <div className="antialiased bg-gray-100">
+        <div className="w-full text-gray-700 bg-white ">
           <div className="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
             <div className="flex flex-row items-center justify-between p-4">
               <a
                 href="/"
-                className="text-lg font-semibold tracking-widest text-gray-900 uppercase rounded-lg dark:text-white focus:outline-none focus:shadow-outline"
+                className="text-lg font-semibold tracking-widest text-gray-900 uppercase rounded-lg focus:outline-none focus:shadow-outline"
               >
                 <img
                   src="/LOGO-NB.png"
@@ -68,6 +68,12 @@ export default function Navbar() {
                 href="/#initiatives"
               >
                 Initiatives
+              </a>
+              <a
+                className="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                href="/board"
+              >
+                Board
               </a>
               <a
                 className="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
