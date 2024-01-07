@@ -2,44 +2,11 @@
 import ApplyButton from "@/components/ApplyButton.astro";
 import DonateButton from "@/components/DonateButton.astro";
 import "@/styles/globals.css";
+import Navbar from "@/components/Navbar";
 ---
 
 <div class="flex flex-col min-h-screen">
-  <header
-    class="w-full border bg-white sticky top-0 z-50 h-14 flex items-center px-4 md:px-6"
-    style=""
-  >
-    <a class="flex items-center justify-center" href="/">
-      <img src="/LOGO-NB.png" alt="CSHS-LOGO" height="50" width="50" />
-      <span class="sr-only">Computer Science Honor Society</span>
-    </a>
-    <nav class="ml-auto flex gap-4 sm:gap-6">
-      <a
-        class="text-sm font-medium hover:underline underline-offset-4"
-        href="/#what"
-      >
-        What do we do?
-      </a>
-      <a
-        class="text-sm font-medium hover:underline underline-offset-4"
-        href="/#membership"
-      >
-        Membership
-      </a>
-      <a
-        class="text-sm font-medium hover:underline underline-offset-4"
-        href="/#initiatives"
-      >
-        Initiatives
-      </a>
-      <a
-        class="text-sm font-medium hover:underline underline-offset-4"
-        href="/contact"
-      >
-        Contact
-      </a>
-    </nav>
-  </header>
+  <Navbar client:load />
   <slot />
   <footer
     class="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t"
