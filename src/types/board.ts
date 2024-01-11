@@ -22,4 +22,5 @@ type Position =
   | "Head of Open Courseware"
   | "Head of Tutoring"
   | "Founder"
-  | "Advisor";
+  | "Advisor"
+  | "Sponser";

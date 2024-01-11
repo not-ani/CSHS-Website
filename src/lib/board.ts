@@ -1,8 +1,27 @@
 import type { BoardMember, Year } from "@/types/board";
 
+export const sponser: BoardMember[] = [
+  {
+    name: "Paul Lein",
+    position: ["Sponser", "Advisor"],
+    year: "2023-2024",
+    bio: "Mr. Lein is a teacher at Cherry Creek High School. He is passionate about computer science and is the sponser of CSHS.",
+    photo: "/lein-headshot.jpg",
+    email: "plein@cherrycreekschools.org",
+  },
+  {
+    name: "Paul Lein",
+    position: ["Sponser", "Advisor"],
+    year: "2022-2023",
+    bio: "Mr. Lein is a teacher at Cherry Creek High School. He is passionate about computer science and is the sponser of CSHS.",
+    photo: "/lein-headshot.jpg",
+  },
+];
+
 export const boardMembers: BoardMember[] = [
   // Add your board members here
   // Example:
+  ...sponser,
   {
     name: "Aniketh (Ani) Chenjeri",
     position: ["President", "Founder"],
@@ -20,20 +39,6 @@ export const boardMembers: BoardMember[] = [
     photo: "/sami-headshot.jpeg",
   },
   {
-    name: "Abhi Kasu",
-    position: ["Advisor", "Founder", "President"],
-    year: "2023-2024",
-    bio: "Abhi is a senior at Cherry Creek High School. He is passionate about computer science and is one of the founders of CSHS. He is also the advisor of the club.",
-    photo: "/no-image.jpg",
-  },
-  {
-    name: "Aryamann Sheoran",
-    position: ["Advisor", "Founder", "President"],
-    year: "2023-2024",
-    bio: "Arymann is a senior at Cherry Creek High School. He is passionate about computer science and is one of the founders of CSHS. He is also the advisor of the club.",
-    photo: "/no-image.jpg",
-  },
-  {
     name: "Ariuka Bayasgalan",
     position: ["Head of Open Courseware"],
     bio: "Ariuka is a senior at Cherry Creek High School. She  is passionate about computer science and is the head of open courseware for CSHS.",
@@ -46,6 +51,20 @@ export const boardMembers: BoardMember[] = [
     bio: "Alyssa is a junior at Cherry Creek High School. She  is passionate about computer science and is the head of tutoring for CSHS.",
     year: "2023-2024",
     photo: "/alyssa-headshot.jpeg",
+  },
+  {
+    name: "Abhi Kasu",
+    position: ["Advisor", "Founder", "President"],
+    year: "2023-2024",
+    bio: "Abhi is a senior at Cherry Creek High School. He is passionate about computer science and is one of the founders of CSHS. He is also the advisor of the club.",
+    photo: "/no-image.jpg",
+  },
+  {
+    name: "Aryamann Sheoran",
+    position: ["Advisor", "Founder", "President"],
+    year: "2023-2024",
+    bio: "Arymann is a senior at Cherry Creek High School. He is passionate about computer science and is one of the founders of CSHS. He is also the advisor of the club.",
+    photo: "/no-image.jpg",
   },
   // 2022
 
