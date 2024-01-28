@@ -23,4 +23,5 @@ type Position =
   | "Head of Tutoring"
   | "Founder"
   | "Advisor"
+  | "Chief Operating Officer"
   | "Sponser";

@@ -18,10 +18,7 @@ export const sponser: BoardMember[] = [
   },
 ];
 
-export const boardMembers: BoardMember[] = [
-  // Add your board members here
-  // Example:
-  ...sponser,
+const twentyThreeFour: BoardMember[] = [
   {
     name: "Aniketh (Ani) Chenjeri",
     position: ["President", "Founder"],
@@ -29,14 +26,6 @@ export const boardMembers: BoardMember[] = [
     bio: "Aniketh is a sophmore at Cherry Creek High School. He is passionate about computer science and is one of the founders of CSHS. He is also the president of the club.",
     photo: "/ani-headshot.jpeg",
     email: "aniketchenjeri@gmail.com",
-  },
-
-  {
-    name: "Sami-ul Ahmed",
-    position: ["Advisor", "Founder", "President"],
-    year: "2023-2024",
-    bio: "Sami is a senior at Cherry Creek High School. He is passionate about computer science and is one of the founders of CSHS. He is also the advisor of the club.",
-    photo: "/sami-headshot.jpeg",
   },
   {
     name: "Ariuka Bayasgalan",
@@ -53,6 +42,23 @@ export const boardMembers: BoardMember[] = [
     photo: "/alyssa-headshot.jpeg",
   },
   {
+    name: "Karthikey Mishra",
+    photo: "null",
+    position: ["Chief Operating Officer"],
+    bio: "Karthikey is a junior at Cherry Creek High School. He  is passionate about computer science and is the chief operating officer for CSHS.",
+    year: "2023-2024",
+  },
+  {
+    name: "Kasey Perlmen",
+    photo: "null",
+    position: ["Chief Operating Officer"],
+    bio: "Kasey is a junior at Cherry Creek High School. She  is passionate about computer science and is the chief operating officer for CSHS.",
+    year: "2023-2024",
+  },
+];
+
+export const legacy: BoardMember[] = [
+  {
     name: "Abhi Kasu",
     position: ["Advisor", "Founder", "President"],
     year: "2023-2024",
@@ -66,6 +72,22 @@ export const boardMembers: BoardMember[] = [
     bio: "Arymann is a senior at Cherry Creek High School. He is passionate about computer science and is one of the founders of CSHS. He is also the advisor of the club.",
     photo: "/no-image.jpg",
   },
+
+  {
+    name: "Sami-ul Ahmed",
+    position: ["Advisor", "Founder", "President"],
+    year: "2023-2024",
+    bio: "Sami is a senior at Cherry Creek High School. He is passionate about computer science and is one of the founders of CSHS. He is also the advisor of the club.",
+    photo: "/sami-headshot.jpeg",
+  },
+];
+
+export const boardMembers: BoardMember[] = [
+  // Add your board members here
+  // Example:
+  ...sponser,
+  ...twentyThreeFour,
+
   // 2022
 
   {
