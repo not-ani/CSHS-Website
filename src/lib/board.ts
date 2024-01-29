@@ -4,14 +4,6 @@ export const sponser: BoardMember[] = [
   {
     name: "Paul Lein",
     position: ["Sponser", "Advisor"],
-    year: "2023-2024",
-    bio: "Mr. Lein is a teacher at Cherry Creek High School. He is passionate about computer science and is the sponser of CSHS.",
-    photo: "/lein-headshot.jpg",
-    email: "plein@cherrycreekschools.org",
-  },
-  {
-    name: "Paul Lein",
-    position: ["Sponser", "Advisor"],
     year: "2022-2023",
     bio: "Mr. Lein is a teacher at Cherry Creek High School. He is passionate about computer science and is the sponser of CSHS.",
     photo: "/lein-headshot.jpg",
@@ -43,16 +35,23 @@ const twentyThreeFour: BoardMember[] = [
   },
   {
     name: "Karthikey Mishra",
-    photo: "null",
+    photo: "/no-image.jpg",
     position: ["Chief Operating Officer"],
     bio: "Karthikey is a junior at Cherry Creek High School. He  is passionate about computer science and is the chief operating officer for CSHS.",
     year: "2023-2024",
   },
   {
     name: "Kasey Perlmen",
-    photo: "null",
+    photo: "/kasey.jpeg",
     position: ["Chief Operating Officer"],
     bio: "Kasey is a junior at Cherry Creek High School. She  is passionate about computer science and is the chief operating officer for CSHS.",
+    year: "2023-2024",
+  },
+  {
+    name: "Henry Lyman",
+    photo: "/no-image.jpg",
+    position: ["Chief Operating Officer"],
+    bio: "Henry is a sophmore at Cherry Creek High School. He  is passionate about computer science and is the chief operating officer for CSHS.",
     year: "2023-2024",
   },
 ];
