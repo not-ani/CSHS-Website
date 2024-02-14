@@ -3,7 +3,7 @@ import type { BoardMember, Year } from "@/types/board";
 export const sponser: BoardMember[] = [
   {
     name: "Paul Lein",
-    position: ["Sponser", "Advisor"],
+    position: ["Sponsor", "Advisor"],
     year: "2022-2023",
     bio: "Mr. Lein is a teacher at Cherry Creek High School. He is passionate about computer science and is the sponser of CSHS.",
     photo: "/lein-headshot.jpg",
@@ -15,7 +15,7 @@ const twentyThreeFour: BoardMember[] = [
     name: "Aniketh (Ani) Chenjeri",
     position: ["President", "Founder"],
     year: "2023-2024",
-    bio: "Aniketh is a sophmore at Cherry Creek High School. He is passionate about computer science and is one of the founders of CSHS. He is also the president of the club.",
+    bio: "Aniketh is a sophomore at Cherry Creek High School. He is passionate about computer science and is one of the founders of CSHS. He is also the president of the club.",
     photo: "/ani-headshot.jpeg",
     email: "aniketchenjeri@gmail.com",
   },
@@ -37,22 +37,29 @@ const twentyThreeFour: BoardMember[] = [
     name: "Karthikey Mishra",
     photo: "/no-image.jpg",
     position: ["Chief Operating Officer"],
-    bio: "Karthikey is a junior at Cherry Creek High School. He  is passionate about computer science and is the chief operating officer for CSHS.",
+    bio: "Karthikey is a sophomore at Cherry Creek High School. He  is passionate about computer science and is the chief operating officer for CSHS.",
     year: "2023-2024",
   },
   {
     name: "Kasey Perlmen",
     photo: "/kasey.jpeg",
     position: ["Chief Operating Officer"],
-    bio: "Kasey is a junior at Cherry Creek High School. She  is passionate about computer science and is the chief operating officer for CSHS.",
+    bio: "Kasey is a sophomore at Cherry Creek High School. She  is passionate about computer science and is the chief operating officer for CSHS.",
     year: "2023-2024",
   },
   {
     name: "Henry Lyman",
     photo: "/no-image.jpg",
     position: ["Chief Operating Officer"],
-    bio: "Henry is a sophmore at Cherry Creek High School. He  is passionate about computer science and is the chief operating officer for CSHS.",
+    bio: "Henry is a sophomore at Cherry Creek High School. He  is passionate about computer science and is the chief operating officer for CSHS.",
     year: "2023-2024",
+  },
+  {
+    name: "Sami-ul Ahmed",
+    position: ["Advisor", "Founder", "President"],
+    year: "2023-2024",
+    bio: "Sami is a senior at Cherry Creek High School. He is passionate about computer science and is one of the founders of CSHS. He is also the advisor of the club.",
+    photo: "/sami-headshot.jpeg",
   },
 ];
 
@@ -115,7 +122,7 @@ export const boardMembers: BoardMember[] = [
     name: "Aryamann Sheoran",
     position: ["Founder", "President"],
     year: "2022-2023",
-    bio: "Arymann is a junior at Cherry Creek High School. He is passionate about computer science and is one of the founders of CSHS. He is also the advisor of the club.",
+    bio: "Aryamann is a junior at Cherry Creek High School. He is passionate about computer science and is one of the founders of CSHS. He is also the advisor of the club.",
     photo: "/no-image.jpg",
   },
 ];

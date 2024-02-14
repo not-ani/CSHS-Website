@@ -24,4 +24,4 @@ type Position =
   | "Founder"
   | "Advisor"
   | "Chief Operating Officer"
-  | "Sponser";
+  | "Sponsor";
