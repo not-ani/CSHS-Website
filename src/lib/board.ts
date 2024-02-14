@@ -43,7 +43,7 @@ const twentyThreeFour: BoardMember[] = [
   {
     name: "Kasey Perlmen",
     photo: "/kasey.jpeg",
-    position: ["Chief Operating Officer"],
+    position: ["Cheif Marketing Officer"],
     bio: "Kasey is a sophomore at Cherry Creek High School. She  is passionate about computer science and is the chief operating officer for CSHS.",
     year: "2023-2024",
   },
@@ -60,6 +60,13 @@ const twentyThreeFour: BoardMember[] = [
     year: "2023-2024",
     bio: "Sami is a senior at Cherry Creek High School. He is passionate about computer science and is one of the founders of CSHS. He is also the advisor of the club.",
     photo: "/sami-headshot.jpeg",
+  },
+  {
+    name: "Dhruv Kumar",
+    position: ["Cheif Marketing Officer"],
+    year: "2023-2024",
+    bio: "Dhruv is an involved and passionate senior here at creek",
+    photo: "/dhruv-headshot.jpeg",
   },
 ];
 
@@ -124,6 +131,13 @@ export const boardMembers: BoardMember[] = [
     year: "2022-2023",
     bio: "Aryamann is a junior at Cherry Creek High School. He is passionate about computer science and is one of the founders of CSHS. He is also the advisor of the club.",
     photo: "/no-image.jpg",
+  },
+  {
+    name: "Dhruv Kumar",
+    position: ["Cheif Marketing Officer"],
+    year: "2022-2023",
+    bio: "Dhruv is an involved and passionate senior here at creek",
+    photo: "/dhruv-headshot.jpeg",
   },
 ];
 
