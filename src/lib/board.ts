@@ -41,7 +41,7 @@ const twentyThreeFour: BoardMember[] = [
     year: "2023-2024",
   },
   {
-    name: "Kasey Perlmen",
+    name: "Kasey Perlman",
     photo: "/kasey.jpeg",
     position: ["Cheif Marketing Officer"],
     bio: "Kasey is a sophomore at Cherry Creek High School. She  is passionate about computer science and is the chief operating officer for CSHS.",
