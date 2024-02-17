@@ -43,7 +43,7 @@ const twentyThreeFour: BoardMember[] = [
   {
     name: "Kasey Perlman",
     photo: "/kasey.jpeg",
-    position: ["Cheif Marketing Officer"],
+    position: ["Chief Marketing Officer"],
     bio: "Kasey is a sophomore at Cherry Creek High School. She  is passionate about computer science and is the chief operating officer for CSHS.",
     year: "2023-2024",
   },
@@ -63,7 +63,7 @@ const twentyThreeFour: BoardMember[] = [
   },
   {
     name: "Dhruv Kumar",
-    position: ["Cheif Marketing Officer"],
+    position: ["Chief Marketing Officer"],
     year: "2023-2024",
     bio: "Dhruv is an involved and passionate senior here at creek",
     photo: "/dhruv-headshot.jpeg",
@@ -134,7 +134,7 @@ export const boardMembers: BoardMember[] = [
   },
   {
     name: "Dhruv Kumar",
-    position: ["Cheif Marketing Officer"],
+    position: ["Chief Marketing Officer"],
     year: "2022-2023",
     bio: "Dhruv is an involved and passionate senior here at creek",
     photo: "/dhruv-headshot.jpeg",
